@@ -132,15 +132,13 @@ p {
   font-size: 0.875em;
 }
 
-/* are we ever adding these????? 
-  img {
+img {
+  width: 100%;
+}
 
-  }
-
-  figure {
-
-  }
-  */
+figure {
+  margin: 0;
+}
 
 address {
   font-style: normal;
@@ -165,6 +163,10 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -230,10 +232,20 @@ footer .copyright {
 /* ---------------------- Mobile Styles - Homepage -------------- */
 
 /* Hero Area */
-
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /* Aside */
@@ -275,6 +287,9 @@ input[type="button"] {
 .features {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .features h2 {
@@ -498,6 +513,10 @@ input[type="button"] {
 
   /* Hero Area */
 
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -545,6 +564,7 @@ input[type="button"] {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -627,7 +647,7 @@ input[type="button"] {
 
   .faq h4,
   .faq p {
-    font-size: .875em;
+    font-size: 0.875em;
     line-height: 1.125;
   }
 }
@@ -649,7 +669,7 @@ input[type="button"] {
     font-size: 2.25em;
   }
 
-  h3, 
+  h3,
   h4 {
     font-size: 1.875em;
   }
